@@ -38,8 +38,8 @@ h1 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .content { /* Added selector for padding */
-        padding: 10px; /* Padding for smaller screens */
+    .content {
+        padding: 15px; /* Padding for smaller screens */
     }
 
     h1 {
@@ -56,6 +56,10 @@ h1 {
 }
 
 @media (max-width: 480px) {
+    .content {
+        padding: 10px; /* Less padding for very small screens */
+    }
+
     h1 {
         font-size: 1.5em; /* Even smaller size for very small screens */
     }
