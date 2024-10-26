@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali 2024</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Fireworks effect background -->
+    <section class="fireworks" id="fireworks"></section>
+    
+    <!-- Main Greeting Content -->
+    <section class="content">
+		<h1>✨ Happy Diwali ✨</h1>
+		<p class="message">
+			Wishing all the members of <strong>Samwaad Club</strong> a very <strong>Happy</strong> and <strong>Safe Diwali</strong>! 🌟 <br>
+			May this festival of lights fill your life with joy, love, and endless blessings. 🪔💖 <br>
+			Celebrate with a heart full of gratitude and let the light guide your way! 🎆✨
+		</p>
+		<p class="signature">- With Love, Shivam and Team 💕</p>
+	</section>
+	
+	
+
+    <!-- Diwali Themed Music -->
+    <audio id="diwaliMusic" loop>
+        <source src="happy diwaali.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Fireworks Effect Script -->
+    <script src="fireworks.js"></script>
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById("diwaliMusic");
+            audio.play().then(() => {
+                console.log("Audio is playing!");
+            }).catch((error) => {
+                console.error("Error playing audio:", error);
+            });
+        };
+    </script>
+</body>
+</html>
