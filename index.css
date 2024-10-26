@@ -1,59 +1,70 @@
-/* Base styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
+/* General Styles */
 body {
-    background-color: #1A1A2E;
-    overflow: hidden;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
 }
 
-/* Fireworks styling */
 .fireworks {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    background: url('fireworks-background.jpg') no-repeat center center fixed; /* Update with your fireworks background image */
+    background-size: cover;
+    z-index: -1;
 }
 
-/* Content styling */
 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 1;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 3.5rem;
-    color: #FFC107;
-    text-shadow: 0px 0px 20px rgba(255, 193, 7, 0.7);
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Default size */
+    margin: 0;
 }
 
 .message {
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-    padding: 0 20px;
+    font-size: 1.2em; /* Default size */
+    line-height: 1.5;
+    margin: 20px 0;
 }
 
 .signature {
-    font-size: 1.2rem;
-    margin-top: 30px;
-    font-style: italic;
-    color: #FFD700;
+    font-size: 1.1em; /* Default size */
 }
 
-audio {
-    display: none;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content { /* Added selector for padding */
+        padding: 10px; /* Padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller size for mobile */
+    }
+    
+    .message {
+        font-size: 1em; /* Smaller size for mobile */
+    }
+
+    .signature {
+        font-size: 0.9em; /* Smaller size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Even smaller size for very small screens */
+    }
+    
+    .message {
+        font-size: 0.9em; /* Smaller size for very small screens */
+    }
+
+    .signature {
+        font-size: 0.8em; /* Smaller size for very small screens */
+    }
 }
